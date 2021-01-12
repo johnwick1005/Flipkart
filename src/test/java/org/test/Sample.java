@@ -61,7 +61,6 @@ public class Sample {
 		String title = driver.getTitle();
 		Assert.assertTrue(title.contains("Facebook"), "check the title");
 		
-		
 		WebElement txtEmail = driver.findElement(By.id("email"));
 		txtEmail.sendKeys("java");
 		String attribute = txtEmail.getAttribute("value");
@@ -70,16 +69,21 @@ public class Sample {
 		driver.findElement(By.id("pass")).sendKeys("abhgf232");
 		
 		driver.findElement(By.name("login")).click();
-		
-
+		WebElement txtEmail2 = driver.findElement(By.id("email"));
+		txtEmail.sendKeys("java");
+		String attribute2 = txtEmail.getAttribute("value");
 		WebElement txtEmail1 = driver.findElement(By.id("email"));
 		txtEmail.sendKeys("java");
 		String attribute1 = txtEmail.getAttribute("value");
-		Assert.assertEquals(attribute, "Java", "check the username");
+        Assert.assertEquals(attribute, "Java", "check the username");
 		
 		driver.findElement(By.id("pass")).sendKeys("abhgf232");
 		
 		driver.findElement(By.name("login")).click();
+
+		
+
+		
 		
 		
 
