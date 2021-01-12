@@ -23,6 +23,11 @@ public class C {
 
 	}
 	
+	@Test
+	private void tc55() {
+		System.out.println("Test 55 :"+Thread.currentThread().getId());
+
+	}
 	
 	
 }
