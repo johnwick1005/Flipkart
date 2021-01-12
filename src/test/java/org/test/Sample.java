@@ -69,15 +69,21 @@ public class Sample {
 		driver.findElement(By.id("pass")).sendKeys("abhgf232");
 		
 		driver.findElement(By.name("login")).click();
-		
 		WebElement txtEmail2 = driver.findElement(By.id("email"));
 		txtEmail.sendKeys("java");
 		String attribute2 = txtEmail.getAttribute("value");
-		Assert.assertEquals(attribute, "Java", "check the username");
+		WebElement txtEmail1 = driver.findElement(By.id("email"));
+		txtEmail.sendKeys("java");
+		String attribute1 = txtEmail.getAttribute("value");
+        Assert.assertEquals(attribute, "Java", "check the username");
 		
 		driver.findElement(By.id("pass")).sendKeys("abhgf232");
 		
 		driver.findElement(By.name("login")).click();
+
+		
+
+		
 		
 		
 
